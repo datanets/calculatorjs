@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>calculator</title>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css">
+</head>
+<body>
+  <div id="log"></div>
+  <h3>collisionCircles</h3>
+  <form onsubmit="collisionCircles(); return false;">
+  circle1 x:<input id="ccx1" style="width:20px;" />
+  circle1 y:<input id="ccy1" style="width:20px;" />
+  circle1 r:<input id="ccr1" style="width:20px;" /><br>
+  circle2 x:<input id="ccx2" style="width:20px;" />
+  circle2 y:<input id="ccy2" style="width:20px;" />
+  circle2 r:<input id="ccr2" style="width:20px;" /><br>
+  Output: <input id="cc_output" style="width:500px;" />
+  <input type="submit" value="Enter" />
+  </form>
+  <h3>collisionRectangles2D</h3>
+  <form onsubmit="collisionRectangles2D(); return false;">
+  rect1 x:<input id="crx1" style="width:20px;" />
+  rect1 y:<input id="cry1" style="width:20px;" />
+  rect1 w:<input id="crw1" style="width:20px;" />
+  rect1 h:<input id="crh1" style="width:20px;" /><br>
+  rect2 x:<input id="crx2" style="width:20px;" />
+  rect2 y:<input id="cry2" style="width:20px;" />
+  rect2 w:<input id="crw2" style="width:20px;" />
+  rect2 h:<input id="crh2" style="width:20px;" /><br>
+  Output: <input id="cr_output" style="width:500px;" />
+  <input type="submit" value="Enter" />
+  </form>
+  <h3>collisionRectangles3D</h3>
+  <form onsubmit="collisionRectangles3D(); return false;">
+  rect1 x:<input id="cr3dx1" style="width:20px;" />
+  rect1 y:<input id="cr3dy1" style="width:20px;" />
+  rect1 w:<input id="cr3dw1" style="width:20px;" />
+  rect1 h:<input id="cr3dh1" style="width:20px;" />
+  rect1 lx1 (length "x1" coordinate):<input id="cr3dlx11" style="width:20px;" />
+  rect1 lx2 (length "x2" coordinate):<input id="cr3dlx21" style="width:20px;" /><br>
+  rect2 x:<input id="cr3dx2" style="width:20px;" />
+  rect2 y:<input id="cr3dy2" style="width:20px;" />
+  rect2 w:<input id="cr3dw2" style="width:20px;" />
+  rect2 h:<input id="cr3dh2" style="width:20px;" />
+  rect2 lx1 (length "x1" coordinate):<input id="cr3dlx12" style="width:20px;" />
+  rect2 lx2 (length "x2" coordinate):<input id="cr3dlx22" style="width:20px;" /><br>
+  Output: <input id="cr3_output" style="width:500px;" />
+  <input type="submit" value="Enter" />
+  </form>
+  <script type="text/javascript" src="calculator.js"></script>
+  <script src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>

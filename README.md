@@ -1,2 +1,4 @@
-calculatorjs
-============
+calculator.js
+==========
+
+Calculations
